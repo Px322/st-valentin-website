@@ -1,0 +1,224 @@
+* {
+    margin: 0;         
+    padding: 0;        
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+.agbalumo-regular {
+  font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    background-color: rgb(255, 205, 213);
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    padding-top: 190px; 
+    position: relative; 
+}
+
+
+#buttons {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+#buttons button {
+    width: 80px;
+    height: 40px;
+    background-color:white; 
+    color: black;
+    border-radius: 15%;
+    font-size: 16px;        
+    cursor:pointer;        
+    transition: all 0.2s;   
+}
+
+#buttons button:hover {
+    background-color: rgb(255, 100, 100);
+    transform: scale(1.1);  
+}
+
+#h {
+    color: rgb(245, 68, 68);
+    font-family: 'Agbalumo', system-ui;
+    font-size: 36px;
+}
+
+#gif{
+    width: 250px;   
+    height: auto;   
+    clip-path: inset(0px 0px 10px 0px); 
+}
+
+#y{
+    color: rgb(245, 68, 68);
+}
+
+#container2 {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    padding-top: 190px;
+}
+
+#y {
+    padding-top: 15px;
+    font-size: 36px;
+}
+
+#back {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px; 
+    margin-top: 15px;   
+    display: inline-block; 
+}
+
+#easter-egg {
+    font-size: 9px;
+}
+
+#easter-egg-link {
+    position: absolute; 
+    top: 10px;          
+    left: 70%;        
+    color: rgb(250, 180, 200);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.secret-body {
+    background-color: rgb(255, 205, 213);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.secret-title {
+    color: rgb(245, 68, 68);
+    margin-bottom: 30px;
+}
+
+.secret-box {
+    display: flex;
+    gap: 10px;
+}
+
+#secret-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#secret-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(245, 68, 68);
+    color: white;
+    cursor: pointer;
+}
+
+#secret-btn:hover {
+    transform: scale(1.05);
+}
+
+#secret-result {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+#back-easter {
+    position: absolute;
+    top: 20px;        
+    left: 20px;       
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#easter-egg-page{
+    background-color: rgb(255, 205, 213);
+    height: 100vh;
+}
+
+#felicitations {
+    padding-bottom: 15px;
+}
+
+
+
+#mess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#message {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 500px;
+    font-size: 24px;
+    background-color: white;
+
+    border: 3px solid rgb(231, 76, 76);
+    border-radius: 5%;
+}
+
+#indice {
+    padding-top: 10px;
+}
+
+#no {
+    transition: all 0.15s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+#no:focus {
+    outline: none;
+}
+
+.heart {
+    position: fixed;
+    font-size: 20px;
+    animation: fall linear infinite;
+    pointer-events: none;
+    z-index: 1;
+    top: -100px; /* Commence en haut de la page */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px)) rotate(360deg);
+        opacity: 0.3;
+    }
+}
