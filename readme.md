@@ -8,9 +8,9 @@ Je l'ai créé pour m'amuser avec les interactions en JavaScript notamment la ge
 
 ## Image
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](/readme_folder/image.png)
+![alt text](/readme_folder/image-1.png)
+![alt text](/readme_folder/image-2.png)
 
 ## Fonctionnement
 
